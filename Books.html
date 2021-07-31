@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel= "stylesheet"  href= "Books.css">
+  <link rel= "stylesheet" type= "text/css" href= "bootstrap.min.css">
+  
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Books Page</title>
+  </head>
+  <body>
+    <div class="col-xs-10" id="mainHeader">UAB BOOK STORE</div>
+    <div class="col-xs-1 cartDiv" ><a href="cart.html"><img src="Images/cart.png"/></a></div>
+    <div class="col-xs-12">
+      <div class="col-xs-6 labelName">Categories:</div>
+      <div class="col-xs-6 categoriesVal">
+        <select>
+          <option>Computer Science</option>
+          <option>Fiction</option>
+          <option>Comedy</option>
+          <option>Horror</option>
+
+       </select>
+      </div>
+    </div>
+    <div class="col-xs-12 booksList">
+      <div class="col-xs-3 bookDetail">
+        <div class="col-xs-12 imageDiv"><img src="Images/Books.jpg"/></div>
+        <div class="col-xs-12 bookName">Fiction Book</div>
+        <div class="col-xs-12 bookName">$45</div>
+        <div style="text-align: center;">
+          <input class="bookCount" id="bookQuantity" type=number min=0 max=100>
+          <button onclick="onIncrementBtn()">+</button>
+          <button onclick="onDecrementBtn()">-</button>
+        </div>
+        <div class="cartBtn">Add to cart</div>
+
+      </div>
+      <div class="col-xs-3 bookDetail">
+        <div class="col-xs-12 imageDiv"><img src="Images/Books.jpg"/></div>
+        <div class="col-xs-12 bookName">Comic Book</div>
+        <div style="text-align: center;">
+          <input class="bookCount" id="bookQuantity1" type=number min=0 max=100>
+          <button onclick="onIncrementBtn()">+</button>
+          <button onclick="onDecrementBtn()">-</button>
+        </div>
+        <div class="cartBtn">Add to cart</div>
+      </div>
+    </div>
+  </body>
+  <script src="jquery.js"></script>
+  
+  <script src="bootstrap.min.js"></script>
+  <script src="Books.js"></script>
+</html>
